@@ -16,7 +16,7 @@ namespace Api2.Controllers
         [Route("showmethecode")]
         public async Task<string> ShowmeTheCode()
         {
-            var urlGithubProjeto = "teste";
+            var urlGithubProjeto = "https://github.com/LucasLopesZanet/Desafio";
             return urlGithubProjeto;
         }
     }

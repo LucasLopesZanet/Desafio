@@ -14,13 +14,14 @@ namespace Api2.Teste
         public void CalculaJuros_Sucesso()
         {
             //arrange
+            var urlGithub = "https://github.com/LucasLopesZanet/Desafio";
 
 
             //act
-            var urlGithub = new ShowCodeController().ShowmeTheCode();
+            var urlGithubRetorno = new ShowCodeController().ShowmeTheCode();
             
             //assert
-            Assert.True(urlGithub.ToString() == "");
+            Assert.True(urlGithubRetorno.ToString() == urlGithub);
 
 
         }
