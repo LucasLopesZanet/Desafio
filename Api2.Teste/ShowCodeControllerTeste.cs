@@ -18,10 +18,10 @@ namespace Api2.Teste
 
 
             //act
-            var urlGithubRetorno = new ShowCodeController().ShowmeTheCode();
+            var urlGithubRetorno = new ShowCodeController().ShowmeTheCode().Result;
             
             //assert
-            Assert.True(urlGithubRetorno.ToString() == urlGithub);
+            Assert.True(urlGithubRetorno == urlGithub);
 
 
         }
